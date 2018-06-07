@@ -1,6 +1,14 @@
 # PropertyBasedTestingSpike
 
-**TODO: Add description**
+Spike/playground for looking at property-based testing in elixir.
+
+## Further reading:
+- https://hexdocs.pm/stream_data/ExUnitProperties.html
+- https://hexdocs.pm/stream_data/StreamData.html
+- http://propertesting.com/
+- https://elixir-lang.org/blog/2017/10/31/stream-data-property-based-testing-and-data-generation-for-elixir/
+
+
 
 ## Installation
 
