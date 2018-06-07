@@ -27,4 +27,12 @@ defmodule PropertyBasedTestingSpikeTest do
       assert value - 2 == PropertyBasedTestingSpike.add_stuff(value)
     end
   end
+
+  test "stringinate/1 property-based test" do
+    check all first <- StreamData.atom(:alphanumeric),
+              second <- StreamData.atom(:alphanumeric) do
+      assert "pre-#{first}-#{second}-post" ==
+               PropertyBasedTestingSpike.stringinate([first, second])
+    end
+  end
 end
