@@ -15,4 +15,8 @@ defmodule PropertyBasedTestingSpike do
   def hello do
     :world
   end
+
+  def add_two(value) do
+    value + 2
+  end
 end
